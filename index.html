@@ -4,18 +4,12 @@
 <meta charset="UTF-8">
 <title>Miss Cobra</title>
 
+<!-- MOBILE FIX (MOST IMPORTANT) -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-
-    
-<style>
-
-
-* MISS COBRA */
-.cobra-title{
-    font-size:30px;           /* moti stylish */
-    font-weight:900;
-    letter-spacing:3px;
-    text-shadow:0 0 8px red, 0 0 15px purple;
+*{
+    box-sizing:border-box;
 }
 
 body{
@@ -30,15 +24,27 @@ body{
     color:#fff;
 }
 
-/* main container */
-.container{
-    margin-top:30px; /* 30px niche */
+/* main box */
+.cobra-box{
+    margin-top:30px;
     text-align:center;
+    width:100%;
+    max-width:420px;   /* mobile perfect width */
+    padding:10px;
+}
+
+/* MISS COBRA title */
+.cobra-title{
+    font-size:30px;
+    font-weight:900;
+    letter-spacing:3px;
+    text-shadow:0 0 8px red, 0 0 15px purple;
 }
 
 /* animated text */
 .cobra-text{
-    font-size:28px;
+    margin-top:15px;
+    font-size:22px;
     font-weight:900;
     letter-spacing:2px;
     text-transform:uppercase;
@@ -49,74 +55,29 @@ body{
         0 0 20px yellow;
 }
 
-/* image style */
+/* image */
 .cobra-img{
     margin-top:25px;
-    width:280px;
-    max-width:90%;
+    width:100%;
+    max-width:320px;
     border-radius:18px;
-    box-shadow:0 0 20px red;
+    box-shadow:0 0 25px red;
 }
 
-/* blink + glow */
+/* glow animation */
 @keyframes blinkGlow{
-    0%{
-        opacity:1;
-        text-shadow:0 0 5px red;
+    0%{ opacity:1; }
+    50%{ opacity:0.4; }
+    100%{ opacity:1; }
+}
+
+/* MOBILE EXTRA FIX */
+@media (max-width:480px){
+    .cobra-title{
+        font-size:26px;
     }
-    50%{
-        opacity:0.4;
-        text-shadow:0 0 25px orange;
-    }
-    100%{
-        opacity:1;
-        text-shadow:0 0 5px red;
-    }
-}
-
-body{
-    margin:0;
-    padding:0;
-    height:100vh;
-    background:#000;
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    font-family: 'Segoe UI', sans-serif;
-    color:#fff;
-}
-
-/* main box */
-.cobra-box{
-    margin-top:30px;          /* upar se 30px */
-    text-align:center;
-    animation: fadeIn 1.2s ease;
-}
-
-/* MISS COBRA */
-.cobra-title{
-    font-size:30px;           /* moti stylish */
-    font-weight:900;
-    letter-spacing:3px;
-    text-shadow:0 0 8px red, 0 0 15px purple;
-}
-
-/* niche wala text */
-.cobra-sub{
-    margin-top:12px;          /* 12px niche */
-    font-size:14px;
-    opacity:0.9;
-}
-
-/* animation */
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        transform:translateY(-20px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
+    .cobra-text{
+        font-size:18px;
     }
 }
 </style>
@@ -125,24 +86,20 @@ body{
 <body>
 
 <div class="cobra-box">
+
     <div class="cobra-title">Miss 𝘾𝙊𝘽𝙍𝘼</div>
-    </style>
-</head>
 
-<body>
-
-<div class="container">
     <div class="cobra-text">
-        tumhary sir pay sotay
+        Tumhary Sir Pay Sotay
     </div>
 
- 
-    <!-- Screenshot image -->
-   <a href="https://rival-black-4gm6lhwb9k.edgeone.app/Screenshot_20260119-122331_1.jpg" target="_blank">
-    <img src="https://rival-black-4gm6lhwb9k.edgeone.app/Screenshot_20260119-122331_1.jpg" alt="cobra screenshot" class="cobra-img">
-</a>
+    <a href="https://rival-black-4gm6lhwb9k.edgeone.app/Screenshot_20260119-122331_1.jpg" target="_blank">
+        <img src="https://rival-black-4gm6lhwb9k.edgeone.app/Screenshot_20260119-122331_1.jpg"
+             alt="cobra screenshot"
+             class="cobra-img">
+    </a>
 
-
+</div>
 
 </body>
 </html>
